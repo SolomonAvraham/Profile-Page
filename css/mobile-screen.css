@@ -77,10 +77,9 @@ nav a {
   background-color: #6891a7;
   background-image: url(../pictures/background-image/background-image.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   background-blend-mode: luminosity;
   background-attachment: fixed;
-  overflow: auto;
   padding: 3%;
 }
 .grid-items-2-1 {
