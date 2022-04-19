@@ -75,9 +75,9 @@ nav a {
 .main {
   grid-area: m;
   background-color: #6891a7;
-  background-image: url("../pictures/background-image/background-image.png");
+  background-image: url(../pictures/background-image/background-image.png);
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-blend-mode: luminosity;
   background-attachment: fixed;
   overflow: auto;
@@ -190,7 +190,7 @@ nav a {
   height: 80vw;
   border: 3px solid #226194;
   animation-name: pics;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
   animation-direction: alternate;
@@ -199,17 +199,17 @@ nav a {
 
 @keyframes pics {
   0% {
-    background-image: url("../pictures/runing-pics/running-pic-1.JPG")
+    background-image: url(../pictures/runing-pics/running-pic-1.JPG);
   }
-  25% {
-    background-image: url("../pictures/runing-pics/running-pic-2.JPG")
+  35% {
+    background-image: url(../pictures/runing-pics/running-pic-2.JPG);
   }
 
-  50% {
-    background-image: url("../pictures/runing-pics/running-pic-3.JPG")
+  60% {
+    background-image: url(../pictures/runing-pics/running-pic-3.JPG);
   }
   100% {
-    background-image: url("../pictures/runing-pics/running-pic-4.JPG")
+    background-image: url(../pictures/runing-pics/running-pic-4.JPG);
   }
 }
 
