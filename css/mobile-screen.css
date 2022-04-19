@@ -75,7 +75,7 @@ nav a {
 .main {
   grid-area: m;
   background-color: #6891a7;
-  background-image: url(./pictures/background-image/background-image.png);
+  background-image: url(../pictures/background-image/background-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: luminosity;
