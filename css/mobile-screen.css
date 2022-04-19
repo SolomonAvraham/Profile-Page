@@ -75,7 +75,7 @@ nav a {
 .main {
   grid-area: m;
   background-color: #6891a7;
-  background-image: url(/pictures/background-image/background-image.png);
+  background-image: url(./pictures/background-image/background-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: luminosity;
@@ -200,23 +200,23 @@ nav a {
 
 @keyframes pics {
   0% {
-    background-image: url(/pictures/runing-pics/running-pic-1.JPG);
+    background-image: url(./pictures/runing-pics/running-pic-1.JPG);
     background-size: 90vw 50vh;
     background-position-x: center;
   }
   25% {
-    background-image: url(/pictures/runing-pics/running-pic-2.JPG);
+    background-image: url(./pictures/runing-pics/running-pic-2.JPG);
     background-size: 100vw 45vh;
     background-position-x: center;
   }
 
   50% {
-    background-image: url(/pictures/runing-pics/running-pic-3.JPG);
+    background-image: url(./pictures/runing-pics/running-pic-3.JPG);
     background-size: 90vw 40vh;
     background-position-x: center;
   }
   100% {
-    background-image: url(/pictures/runing-pics/running-pic-4.JPG);
+    background-image: url(./pictures/runing-pics/running-pic-4.JPG);
     background-size: 100vw 50vh;
     background-position-x: center;
   }
