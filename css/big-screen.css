@@ -21,8 +21,8 @@ p::first-letter {
   display: grid;
   grid-template-areas:
     "h h h h"
-    "s m m m"
-    "s m m m"
+    "s m m ."
+    "s m m ."
     "f f f f";
 }
 
@@ -52,17 +52,21 @@ header {
   background-color: #6891a7;
   width: 10vw;
   height: 100vh;
-  /* border-right: 1.5px solid black; */
-  border: 1.5px solid black;
-  position: fixed;
-  z-index: 1;
-  align-items: center;
-  a
+  /* align-items: flex-start; */
 }
 
-/* .sidebar div {
-  bottom: -13%;
-} */
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: -2%;
+}
+
+.sidebar ul li a {
+  font-size: 120%;
+  font-family: monospace;
+  font-weight: 400;
+}
 
 /* NAV-BAR */
 
@@ -81,7 +85,7 @@ nav {
   background-blend-mode: luminosity;
   background-attachment: fixed;
   padding: 3%;
-  width: 65vw;
+  border-left: 0.5px solid black;
 }
 
 #main-h1 {
