@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p::first-letter {
+  font-size: x-large;
+}
+
+.grid-container {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "h h h h "
+    "n n n n "
+    "m m m m "
+    "f f f f ";
+
+  grid-template-rows: 10% 5% 80% 5%;
+}
+
+/* HEADER */
+
+header {
+  grid-area: h;
+  background-color: #226194;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 6vh;
+  padding: 1%;
+}
+
+/* NAV-BAR */
+
+nav {
+  grid-area: n;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 98vw;
+  height: 4vh;
+  background-color: #39688e;
+  position: fixed;
+  top: 6%;
+  border: 0.5px solid black;
+  padding: 1%;
+}
+
+nav a {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 90%;
+}
+
+/* MAIN */
+
+.main {
+  grid-area: m;
+  background-color: #6891a7;
+  background-image: url(../pictures/background-image/background-image.png);
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+  background-blend-mode: luminosity;
+  background-attachment: fixed;
+  padding: 3%;
+}
+.grid-items-2-1 {
+  margin-top: 30%;
+}
+#main-h1 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 12vw;
+  font-family: "Oswald", sans-serif;
+  text-shadow: -5px 0px 0px #226194;
+  color: #e8e9ff;
+}
+
+#main-pic {
+  border-radius: 50%;
+  float: left;
+  width: 40vw;
+  height: 20vh;
+  padding: 2%;
+}
+
+#main-h3 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 5vw;
+  font-family: "Oswald", sans-serif;
+  text-shadow: -2px 0px 0px #226194;
+  color: #e8e9ff;
+}
+
+#main-p-1 {
+  float: none;
+  left: 63%;
+  color: whitesmoke;
+}
+
+#main-p-2 {
+  float: none;
+  color: whitesmoke;
+}
+
+#main-p-3 {
+  float: none;
+  color: whitesmoke;
+}
+
+#main-p-4 {
+  float: none;
+  color: whitesmoke;
+}
+
+/* MAIN- projects-pics */
+
+.project-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30%;
+}
+
+.project-pics h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 8vw;
+  font-family: "Oswald", sans-serif;
+  text-shadow: -2px 0px 0px #226194;
+  color: #e8e9ff;
+}
+
+#projects-style h3 {
+  font-size: 150%;
+  color: #e8e9ff;
+  text-align: center;
+}
+#projects-style a {
+  font-size: 250%;
+  color: black;
+}
+#projects-style p {
+  font-size: 100%;
+  color: #e8e9ff;
+  text-align: center;
+}
+
+#projects-pic-1 {
+  width: 90vw;
+  height: 60vw;
+  border: 1.5px dotted #226194;
+  padding: 1%;
+}
+
+/* MAIN- runing-pics */
+
+.pics h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 8vw;
+  font-family: "Oswald", sans-serif;
+  text-shadow: -2px 0px 0px #226194;
+  color: #e8e9ff;
+  margin-top: 30%;
+}
+
+.runing-pics {
+  width: 90vw;
+  height: 80vw;
+  border: 3px solid #226194;
+  animation-name: pics;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  margin-bottom: 50%;
+}
+
+@keyframes pics {
+  0% {
+    background-image: url(../pictures/runing-pics/running-pic-1.JPG);
+    background-size: 100% 100%;
+  }
+  35% {
+    background-image: url(../pictures/runing-pics/running-pic-2.JPG);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(../pictures/runing-pics/running-pic-3.JPG);
+    background-size: 100% 100%;
+  }
+  100% {
+    background-image: url(../pictures/runing-pics/running-pic-4.JPG);
+    background-size: 100% 100%;
+  }
+}
+
+/* SIDE-BAR */
+
+/* .sidebar {
+  grid-area: s;
+  background-color: #6891a7;
+} */
+
+/* FOOTER */
+
+footer {
+  grid-area: f;
+  background-color: #226194;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  border: 0.5px solid black;
+  padding: 1%;
+}
+
+footer p::first-letter {
+  font-size: 100%;
+}
+
+.email {
+  font-size: 100%;
+  text-align: center;
+  color: white;
+}
+
+.phone {
+  font-size: 100%;
+  text-align: center;
+  color: white;
+}
