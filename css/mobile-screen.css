@@ -17,8 +17,7 @@ p::first-letter {
 }
 
 .grid-container {
-  width: 100vw;
-  height: 100vh;
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-areas:
     "h h h h "
