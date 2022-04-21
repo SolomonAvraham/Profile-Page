@@ -21,8 +21,8 @@ p::first-letter {
   display: grid;
   grid-template-areas:
     "h h h h"
-    "s m m ."
-    "s m m ."
+    "s m m m"
+    "s m m m"
     "f f f f";
 }
 
@@ -43,6 +43,16 @@ header {
   z-index: 10;
 }
 
+.grid-items-1-2:hover img {
+  width: 115%;
+}
+.grid-items-1-3:hover img {
+  width: 120%;
+}
+.grid-items-1-4:hover img {
+  width: 120%;
+}
+
 /* SIDE-BAR */
 
 .sidebar-container {
@@ -52,20 +62,32 @@ header {
   background-color: #6891a7;
   width: 10vw;
   height: 100vh;
-  /* align-items: flex-start; */
+  position: relative;
 }
 
 .sidebar {
   position: fixed;
   z-index: 1;
   top: 10%;
-  left: -2%;
+  align-self: center;
+  font-size: 140%;
+  font-family: monospace;
+  text-shadow: -2px -1px 0px #226194;
+  color: whitesmoke;
 }
 
-.sidebar ul li a {
-  font-size: 120%;
-  font-family: monospace;
-  font-weight: 400;
+.sidebar div {
+  margin-top: 10%;
+}
+
+.sidebar-item-1:hover {
+  font-size: 110%;
+}
+.sidebar-item-2:hover {
+  font-size: 110%;
+}
+.sidebar-item-3:hover {
+  font-size: 110%;
 }
 
 /* NAV-BAR */
@@ -81,11 +103,50 @@ nav {
   background-color: #6891a7;
   background-image: url(../pictures/background-image/background-image.png);
   background-repeat: no-repeat;
-  background-size: 150% 100% 250%;
+  background-size: 75% 100% ;
   background-blend-mode: luminosity;
   background-attachment: fixed;
   padding: 3%;
   border-left: 0.5px solid black;
+  position: relative;
+  z-index: 1;
+}
+
+#main-pic {
+  border-radius: 50%;
+  float: left;
+  right: 0;
+  width: 15vw;
+  height: 27vh;
+  margin: 2%;
+  padding: 1%;
+  background-image: url(../pictures/main-pics/main-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: 101% 100%;
+}
+
+#main-pic:hover {
+  cursor: pointer;
+  animation-name: main-pic;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+
+  z-index: 2;
+}
+
+@keyframes main-pic {
+  50% {
+    background-image: url(../pictures/main-pics/main-pic-2\ .jpg);
+    width: 20vw;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: 101% 105%;
+    box-shadow: 10px 10px 30px 15px #226194;
+  }
+
+  100% {
+    background-image: url(../pictures/main-pics/main-pic.jpg);
+  }
 }
 
 #main-h1 {
@@ -95,14 +156,6 @@ nav {
   font-family: "Oswald", sans-serif;
   text-shadow: -5px 0px 0px #226194;
   color: #e8e9ff;
-}
-
-#main-pic {
-  border-radius: 50%;
-  float: left;
-  width: 15vw;
-  height: 30vh;
-  padding: 2%;
 }
 
 #main-h3 {
@@ -137,10 +190,14 @@ nav {
 
 /* MAIN- projects-pics */
 
+#projects-2 {
+  margin: 5%;
+}
+
 .project-pics {
   display: flex;
   flex-direction: column;
-  margin-top: 30%;
+  margin-top: 25%;
 }
 
 .project-pics h2 {
@@ -173,16 +230,20 @@ nav {
 #projects-pic-1 {
   width: 40vw;
   height: 25vw;
-  border: 1.5px dotted #226194;
-  padding: 1%;
+  border: 2px dotted #226194;
 }
 
 /* MAIN- runing-pics */
+
+#pictures-2 {
+  margin-bottom: 4%;
+}
 
 .pics {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25%;
 }
 
 .pics h2 {
@@ -192,19 +253,18 @@ nav {
   font-family: "Oswald", sans-serif;
   text-shadow: -2px 0px 0px #226194;
   color: #e8e9ff;
-  margin-top: 30%;
 }
 
 .runing-pics {
-  width: 55vw;
-  height: 40vw;
+  width: 40vw;
+  height: 30vw;
   border: 3px solid #226194;
   animation-name: pics;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
   animation-direction: alternate;
-  margin-bottom: 50%;
+  margin-bottom: 30%;
 }
 
 @keyframes pics {

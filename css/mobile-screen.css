@@ -87,6 +87,20 @@ display: none;
 .grid-items-2-1 {
   margin-top: 30%;
 }
+
+#main-pic {
+  border-radius: 50%;
+  float: left;
+  right: 0;
+  width: 50vw;
+  height: 20vh;
+  margin: 2%;
+  padding: 1%;
+  background-image: url(../pictures/main-pics/main-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: 101% 100%;
+}
+
 #main-h1 {
   letter-spacing: 5px;
   text-align: center;
@@ -94,14 +108,6 @@ display: none;
   font-family: "Oswald", sans-serif;
   text-shadow: -5px 0px 0px #226194;
   color: #e8e9ff;
-}
-
-#main-pic {
-  border-radius: 50%;
-  float: left;
-  width: 40vw;
-  height: 20vh;
-  padding: 2%;
 }
 
 #main-h3 {
