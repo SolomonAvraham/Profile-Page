@@ -44,13 +44,15 @@ header {
 }
 
 .grid-items-1-2:hover img {
-  width: 115%;
+  width: 150%;
+  margin-bottom: 50%;
 }
 .grid-items-1-3:hover img {
-  width: 120%;
+  width: 125%;
+  margin-bottom: 50%;
 }
 .grid-items-1-4:hover img {
-  width: 120%;
+  width: 125%;
 }
 
 /* SIDE-BAR */
@@ -273,15 +275,11 @@ nav {
     background-image: url(../pictures/runing-pics/running-pic-1.JPG);
     background-size: 100% 100%;
   }
-  35% {
+  50% {
     background-image: url(../pictures/runing-pics/running-pic-2.JPG);
     background-size: 100% 100%;
   }
 
-  60% {
-    background-image: url(../pictures/runing-pics/running-pic-3.JPG);
-    background-size: 100% 100%;
-  }
   100% {
     background-image: url(../pictures/runing-pics/running-pic-4.JPG);
     background-size: 100% 100%;
@@ -312,14 +310,16 @@ footer p::first-letter {
 
 .email img {
   width: 50%;
-  height: 100%;
-
-  color: white;
 }
 
 .phone img {
   width: 50%;
-  height: 100%;
+}
 
-  color: white;
+#a:hover {
+  width: 70%;
+}
+
+#b:hover {
+  width: 70%;
 }
